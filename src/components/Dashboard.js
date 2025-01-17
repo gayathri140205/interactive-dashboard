@@ -14,11 +14,11 @@ function Dashboard() {
   }));
 
   const lorryTypeData = filteredData.map(item => ({
-    category: `Lorry Type: ${item["Lorry Type"]}`,  // You can modify this to a more meaningful category
+    category: `Lorry Type: ${item["Lorry Type"]}`,  
     count: item["Lorry Type"] || 0,
   }));
 
-  // Debugging output
+  // Debugging 
   console.log("Asset Utilization Data:", assetUtilizationData);
   console.log("Lorry Type Data:", lorryTypeData);
 
