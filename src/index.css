@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e5dcdc;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.chart {
+  background: rgba(130, 10, 10, 0.575);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.charts-container {
+  background-color: #f0f0f0; /* Temporary background color to check visibility */
+  padding: 20px;
+}
+
+.chart {
+  border: 1px solid black; /* Border around each chart */
+}
+.chart-container {
+  width: 100%;
+  height: 400px;
+}
+/* index.css */
+
+/* Container for the pie chart section */
+.pie-chart-container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Flexbox layout for arranging the charts horizontally */
+.charts-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the charts */
+  flex-wrap: wrap;  /* This ensures the charts stack on smaller screens */
+}
+
+/* Box for each pie chart */
+.pie-chart-box {
+  flex: 1;
+  max-width: 48%;  /* Ensures both charts fit within the container */
+  box-sizing: border-box;
+}
+
+/* Styling for the pie chart headers */
+.pie-chart-box h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+/* index.css */
+
+/* Container for the entire dashboard */
+.dashboard {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container to hold the left and right charts */
+.charts-container {
+  display: flex;
+  justify-content: space-between; /* This spaces out the charts */
+  gap: 20px; /* Adds space between the charts */
+  flex-wrap: wrap; /* Allows charts to wrap on smaller screens */
+}
+
+/* Box for each chart */
+.chart-box {
+  width: 48%; /* Makes each chart box take up nearly half the container */
+  max-width: 600px; /* Prevents the chart from getting too wide */
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Styling for chart headers */
+.chart-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive handling for smaller screens */
+@media (max-width: 768px) {
+  .charts-container {
+    flex-direction: column; /* Stack the charts vertically on small screens */
+    align-items: center; /* Centers the items */
+  }
+
+  .chart-box {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+.efficiency-box {
+  position: fixed;          /* Fixes the box position to the viewport */
+  top: 20px;                /* Adjusts the box's position from the top */
+  left: 20px;               /* Adjusts the box's position from the left */
+  background-color: #ecf1ec; /* Green background */
+  color: rgb(22, 11, 11);             /* White text color */
+  padding: 10px 20px;       /* Adds some padding for better spacing */
+  border-radius: 5px;       /* Rounds the corners for a nice effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for a subtle effect */
+  font-size: 1.2rem;        /* Adjusts the font size */
+  font-weight: bold;        /* Makes the text bold */
+  z-index: 1000;            /* Ensures it's above other elements */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns the charts to the left */
+  align-items: flex-start;
+  gap: 20px; /* Adds space between the components */
+  position: relative; /* For absolute positioning of the efficiency box */
+  width: 100%;
+}
+
+.efficiency-box {
+  position: absolute;        /* Positioning it within the charts container */
+  top: 20px;                 /* Adjusts the box from the top */
+  left: 20px;                /* Adjusts the box from the left */
+  background-color: #f3f7f4; /* Green background */
+  color: rgb(13, 12, 12);              /* White text color */
+  padding: 10px ;        /* Adds some padding for better spacing */
+  border-radius: 5px;        /* Rounds the corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  font-size: 1.2rem;         /* Adjusts the font size */
+  font-weight: bold;         /* Makes the text bold */
+  z-index: 1000;             /* Ensures it appears above other elements */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns the charts to the left */
+  align-items: flex-start;
+  gap: 20px; /* Adds space between the components */
+  position: relative; /* For absolute positioning of the efficiency box */
+  width: 100%;
+}
+
+.efficiency-box {
+  position: absolute;        /* Positioning it within the charts container */
+  top: 20px;                 /* Adjusts the box from the top */
+  left: 20px;                /* Adjusts the box from the left */
+  background-color: #bfc6bf; /* Green background */
+  color: rgb(22, 16, 16);              /* White text color */
+  padding: 10px 20px;        /* Adds some padding for better spacing */
+  border-radius: 5px;        /* Rounds the corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  font-size: 1.2rem;         /* Adjusts the font size */
+  font-weight: bold;         /* Makes the text bold */
+  z-index: 1000;             /* Ensures it appears above other elements */
+  margin-bottom: 40px;       /* Add margin to the bottom to ensure it doesn't overlap */
+}
